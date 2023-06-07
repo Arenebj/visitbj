@@ -16,6 +16,15 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  provider:
+  shared_preferences:
+  google_fonts:
+  dio:
+  flutter_svg:
+  cached_network_image:
+  flutter_screenutil:
+  auto_size_text:
+  animations:
 
 dev_dependencies:
   flutter_test:
