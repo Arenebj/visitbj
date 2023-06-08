@@ -14,7 +14,12 @@ class AppTypography {
       fontSize: 14,
       fontWeight: FontWeight.w300,
       color: AppColors.white);
-  final TextStyle headline =  const TextStyle(
+  final TextStyle regularHug = const TextStyle(
+      fontFamily: _poppins,
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.detailsColors);
+  final TextStyle headline = const TextStyle(
       fontFamily: _poppins,
       fontSize: 34,
       fontWeight: FontWeight.w800,
@@ -39,7 +44,7 @@ class AppTypography {
       fontSize: 16,
       fontWeight: FontWeight.w500,
       color: AppColors.primaryTwo);
-  final TextStyle text =  const TextStyle(
+  final TextStyle regularBold = const TextStyle(
       fontFamily: _poppins,
       fontSize: 17,
       fontWeight: FontWeight.w600,
@@ -49,6 +54,11 @@ class AppTypography {
       fontSize: 8,
       fontWeight: FontWeight.w600,
       color: AppColors.primaryTwo);
+  final TextStyle subtitle =  const TextStyle(
+      fontFamily: _poppins,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: AppColors.orange);
 
 
 }

@@ -6,6 +6,14 @@ class AppColors {
   static const Color primaryOne = Color(0xffFFB923);
   static const Color primaryTwo = Color(0xffFF8800);
   static const Color green = Color(0xff168039);
+  static const Color nature = Color(0xff168039);
+ // static const Color natureBg = Color(0xffF2FFF2);
+  static const Color safari = Color(0xffB06005);
+  static const Color safariBg = Color(0xffFFF3E6);
+  static const Color aventure = Color(0xffFFB923);
+ // static const Color aventureBg = Color(0xffFFFBF4);
+  static const Color culture = Color(0xff2388FF);
+  //static const Color cultureBg = Color(0xffE4F5FF);
   static const Color greenTint = Color(0xffF9FFF9);
   static const Color greenTintTwo = Color(0xffBEEEB7);
   static const Color greenThree = Color(0xffE4FBE1);
@@ -19,5 +27,50 @@ class AppColors {
   static const Color black = Color(0xff000000);
   static const Color brown = Color(0xff43474E);
   static const Color outline = Color(0xff938F99);
+  static const Color orange = Color(0xffB06005);
+  static const Color greyScale = Color(0xff191825);
+  static const Color categorie = Color(0xff5E5E62);
+  static const Color neutral = Color(0xffE3E2E6);
+  static const Color natureBg = Color(0xff159800);
+  static const Color cultureBg = Color(0xff2388FF);
+  static const Color aventureBg = Color(0xffCD8F09);
+  static const Color familyBg = Color(0xff0645BE);
+  static const Color detenteBg = Color(0xffF28406);
+  static const Color balneaireBg = Color(0xff00A5C9);
+  static const Color rate = Color(0xff8E9199);
+  static const Color outlineVariant = Color(0xffC4C6CF);
 
+  //static const Color outline = Color(0xff8E9199);
+
+  static getColor(String libelle) {
+    switch (libelle) {
+      case "Nature":
+        return AppColors.nature;
+      case "Safari":
+        return AppColors.safari;
+      case "Aventure":
+        return AppColors.aventure;
+      case "Culture":
+        return AppColors.culture;
+      default:
+    }
+  }
+
+  static getColorBg(String libelle) {
+    switch (libelle) {
+      case "Nature":
+        return AppColors.natureBg.withOpacity(0.2);
+
+      case "Safari":
+        return AppColors.safariBg.withOpacity(0.2);
+
+      case "Aventure":
+        return AppColors.aventureBg.withOpacity(0.2);
+
+      case "Culture":
+        return AppColors.cultureBg.withOpacity(0.2);
+
+      default:
+    }
+  }
 }
