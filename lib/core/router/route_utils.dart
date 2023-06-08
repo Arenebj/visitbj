@@ -1,6 +1,7 @@
 enum AppPage {
 splash,
-  dashboard,
+dashboard,
+home,
 }
 
 extension AppPageExtension on AppPage {
@@ -10,6 +11,8 @@ extension AppPageExtension on AppPage {
         return "/splash";
       case AppPage.dashboard:
         return "/dashboard";
+      case AppPage.home:
+        return "/home";
         default:
         return "/";
     }
@@ -21,6 +24,8 @@ extension AppPageExtension on AppPage {
         return "SPLASH";
       case AppPage.dashboard:
         return "DASHBOARD";
+      case AppPage.home:
+        return "HOME";
       default:
         return "HOME";
     }
