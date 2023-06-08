@@ -19,6 +19,21 @@ class AppRouter {
         );
       },
       routes: [
+        ShellRoute(
+            navigatorKey: _shellNavigatorKey,
+            builder: (context, state, child) {
+              return child;
+            },
+            routes: [
+              GoRoute(
+                  path: AppPage.dashboard.toPath,
+                  name: AppPage.dashboard.toName,
+                  builder: (context, state) => const BottomNavigatorScreen(),
+                  routes: [
+
+                  ]),
+            ]),
+
         GoRoute(
           path: AppPage.splash.toPath,
           name: AppPage.splash.toName,
