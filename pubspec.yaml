@@ -25,6 +25,7 @@ dependencies:
   flutter_screenutil:
   auto_size_text:
   animations:
+  go_router:
 
 dev_dependencies:
   flutter_test:
