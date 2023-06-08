@@ -22,7 +22,6 @@ dependencies:
   cached_network_image:
   auto_size_text:
   animations:
-  go_router:
 
   #storage
   flutter_secure_storage: ^8.0.0
