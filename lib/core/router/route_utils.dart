@@ -1,5 +1,6 @@
 enum AppPage {
 splash,
+  onBoarding,
   dashboard,
 }
 
@@ -8,6 +9,8 @@ extension AppPageExtension on AppPage {
     switch (this) {
       case AppPage.splash:
         return "/splash";
+      case AppPage.onBoarding:
+        return "/onBoarding";
       case AppPage.dashboard:
         return "/dashboard";
         default:
@@ -19,6 +22,8 @@ extension AppPageExtension on AppPage {
     switch (this) {
       case AppPage.splash:
         return "SPLASH";
+      case AppPage.onBoarding:
+        return "ONBOARDING";
       case AppPage.dashboard:
         return "DASHBOARD";
       default:

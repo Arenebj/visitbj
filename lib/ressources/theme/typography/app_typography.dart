@@ -14,6 +14,13 @@ class AppTypography {
       fontSize: 14,
       fontWeight: FontWeight.w300,
       color: AppColors.white);
+  final TextStyle regularOneUnderlined =  const TextStyle(
+      decoration: TextDecoration.underline,
+      decorationStyle: TextDecorationStyle.solid,
+      fontFamily: _roboto,
+      fontSize: 14,
+      fontWeight: FontWeight.w300,
+      color: AppColors.white);
   final TextStyle headline =  const TextStyle(
       fontFamily: _roboto,
       fontSize: 34,
