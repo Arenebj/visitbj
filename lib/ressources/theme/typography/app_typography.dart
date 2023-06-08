@@ -37,7 +37,7 @@ class AppTypography {
   final TextStyle regular =  const TextStyle(
       fontFamily: _poppins,
       fontSize: 16,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       color: AppColors.primaryTwo);
   final TextStyle text =  const TextStyle(
       fontFamily: _poppins,
@@ -49,6 +49,11 @@ class AppTypography {
       fontSize: 8,
       fontWeight: FontWeight.w600,
       color: AppColors.primaryTwo);
+  final TextStyle subtitle =  const TextStyle(
+      fontFamily: _poppins,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: AppColors.orange);
 
 
 }

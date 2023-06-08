@@ -9,5 +9,13 @@ class Svgs {
   final inactiveSearch ="assets/svg/inactive_search.svg";
   final account ="assets/svg/active_account.svg";
   final inactiveAccount ="assets/svg/inactive_account.svg";
+  final categorieImage ="assets/svg/categorie_image.svg";
+  final nature ="assets/svg/nature.svg";
+  final culture ="assets/svg/culture.svg";
+  final aventure ="assets/svg/aventure.svg";
+  final family ="assets/svg/familly.svg";
+  final detente ="assets/svg/detente.svg";
+  final balnenaire ="assets/svg/balneaire.svg";
+  final calendar ="assets/svg/calendar.svg";
 
 }

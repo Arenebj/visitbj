@@ -32,11 +32,19 @@ class Assets {
   static const String svgActiveFavorie = 'assets/svg/active_favorie.svg';
   static const String svgActiveHome = 'assets/svg/active_home.svg';
   static const String svgActiveSearch = 'assets/svg/active_search.svg';
+  static const String svgAventure = 'assets/svg/aventure.svg';
+  static const String svgBalneaire = 'assets/svg/balneaire.svg';
+  static const String svgCalendar = 'assets/svg/calendar.svg';
+  static const String svgCategorieImage = 'assets/svg/categorie_image.svg';
+  static const String svgCulture = 'assets/svg/culture.svg';
+  static const String svgDetente = 'assets/svg/detente.svg';
+  static const String svgFamilly = 'assets/svg/familly.svg';
   static const String svgIcon = 'assets/svg/icon.svg';
   static const String svgInactiveAccount = 'assets/svg/inactive_account.svg';
   static const String svgInactiveFavorie = 'assets/svg/inactive_favorie.svg';
   static const String svgInactiveHome = 'assets/svg/inactive_home.svg';
   static const String svgInactiveSearch = 'assets/svg/inactive_search.svg';
   static const String svgLogo = 'assets/svg/logo.svg';
+  static const String svgNature = 'assets/svg/nature.svg';
 
 }

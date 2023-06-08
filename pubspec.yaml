@@ -22,6 +22,8 @@ dependencies:
   cached_network_image:
   auto_size_text:
   animations:
+  smooth_page_indicator: ^1.1.0
+
 
   #storage
   flutter_secure_storage: ^8.0.0

@@ -16,7 +16,7 @@ class _BottomNavigatorScreenState extends State<BottomNavigatorScreen> {
           return IndexedStack(
             index: provider.index,
             children: <Widget>[
-              Center(child: Text(provider.index.toString())),
+              const PackDescription(),
               Center(child: Text(provider.index.toString())),
               Center(child: Text(provider.index.toString())),
               Center(child: Text(provider.index.toString())),
