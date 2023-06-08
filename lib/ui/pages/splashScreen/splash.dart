@@ -1,4 +1,5 @@
 import 'package:visitbj/export.dart';
+import 'package:visitbj/ressources/theme/app_theme.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -6,7 +7,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Center(child: Image.asset($appAssets.imgs.logo),),
+      body:Center(child: SvgPicture.asset($appAssets.svgs.icon),),
     );
   }
 }
