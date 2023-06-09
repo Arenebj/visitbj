@@ -16,6 +16,8 @@ export 'package:visitbj/core/provider/categorie_provider.dart';
 export 'package:visitbj/ressources/model/pack_event.dart';
 export 'package:visitbj/core/provider/pack/pack_event_provider.dart';
 export 'package:flutter_rating_bar/flutter_rating_bar.dart';
+export 'package:visitbj/utils/constants/section.dart';
+
 
 
 

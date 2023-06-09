@@ -1,4 +1,8 @@
 import 'package:visitbj/export.dart';
+import 'package:visitbj/ui/common/home/section/section_event.dart';
+import 'package:visitbj/ui/common/home/section/section_party.dart';
+import 'package:visitbj/ui/common/home/section/section_sejour.dart';
+import 'package:visitbj/ui/common/home/section/section_welcome.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
