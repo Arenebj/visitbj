@@ -7,7 +7,7 @@ class AppRouter {
   static final GoRouter _goRouter = GoRouter(
       navigatorKey: _rootNavigatorKey,
       debugLogDiagnostics: true,
-      initialLocation: AppPage.splash.toPath,
+      initialLocation: AppPage.home.toPath,
       errorBuilder: (context, state) {
         return const Scaffold(
           body: Center(
@@ -24,6 +24,13 @@ class AppRouter {
           name: AppPage.splash.toName,
           builder: (context, state) {
             return const SplashScreen();
+          },
+        ),
+        GoRoute(
+          path: AppPage.home.toPath,
+          name: AppPage.home.toName,
+          builder: (context, state) {
+            return const HomeScreen();
           },
         ),
 

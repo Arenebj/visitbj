@@ -23,13 +23,4 @@ class SpaceH extends StatelessWidget {
   }
 }
 
-class SectionTitle extends StatelessWidget {
-  final String title;
-  const SectionTitle(this.title, {Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      title,
-    );
-  }
-}
+

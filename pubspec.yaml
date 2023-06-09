@@ -22,9 +22,11 @@ dependencies:
   cached_network_image:
   auto_size_text:
   animations:
+  flutter_rating_bar:
 
   #storage
   flutter_secure_storage: 
+  intl: ^0.18.1
 
 
 dev_dependencies:
