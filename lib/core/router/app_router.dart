@@ -7,7 +7,7 @@ class AppRouter {
   static final GoRouter _goRouter = GoRouter(
       navigatorKey: _rootNavigatorKey,
       debugLogDiagnostics: true,
-      initialLocation: AppPage.onBoarding.toPath,
+      initialLocation: AppPage.splash.toPath,
       errorBuilder: (context, state) {
         return const Scaffold(
           body: Center(
