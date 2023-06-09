@@ -1,4 +1,6 @@
 import 'package:visitbj/export.dart';
+import 'package:visitbj/ui/pages/bottomNavigator/bottomNavigator.dart';
+import 'package:visitbj/ui/pages/homeScreen/homeScreen.dart';
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
   static final _shellNavigatorKey = GlobalKey<NavigatorState>();
@@ -30,11 +32,15 @@ class AppRouter {
                   name: AppPage.dashboard.toName,
                   builder: (context, state) => const BottomNavigatorScreen(),
                   routes: [
-
+                    GoRoute(
+                      path: "home",
+                      pageBuilder: (context, state) => NoTransitionPage(child: HomeScreen()),
+                    
+                    ),
                   ]),
             ]),
 
-        GoRoute(
+       GoRoute(
           path: AppPage.splash.toPath,
           name: AppPage.splash.toName,
           builder: (context, state) {

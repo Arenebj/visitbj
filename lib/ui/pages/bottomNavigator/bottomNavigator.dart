@@ -1,5 +1,6 @@
 import 'package:visitbj/export.dart';
 import 'package:visitbj/ressources/theme/app_theme.dart';
+import 'package:visitbj/ui/pages/homeScreen/homeScreen.dart';
 class BottomNavigatorScreen extends StatefulWidget {
   const BottomNavigatorScreen({super.key});
 
@@ -16,7 +17,7 @@ class _BottomNavigatorScreenState extends State<BottomNavigatorScreen> {
           return IndexedStack(
             index: provider.index,
             children: <Widget>[
-              Center(child: Text(provider.index.toString())),
+              HomeScreen(),
               Center(child: Text(provider.index.toString())),
               Center(child: Text(provider.index.toString())),
               Center(child: Text(provider.index.toString())),

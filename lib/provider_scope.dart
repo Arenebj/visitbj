@@ -1,3 +1,6 @@
+
+
+
 import 'export.dart';
 // global providers
 class ProviderScope extends StatelessWidget {
@@ -13,6 +16,8 @@ class ProviderScope extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<DashboardProvider>(create: (_) => DashboardProvider()),
+        ChangeNotifierProvider<CategoryProvider>(create: (_) => CategoryProvider()),
+        ChangeNotifierProvider<PackEventProvider>(create: (_) => PackEventProvider()),
       ],
       child: child,
     );
