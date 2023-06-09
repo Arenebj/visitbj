@@ -6,6 +6,7 @@ class AppColors {
   static const Color primaryTwo = Color(0xffFF8800);
   static const Color green = Color(0xff168039);
   static const Color nature = Color(0xff168039);
+  static const Color cartNote = Color(0xff96ED89);
   static const Color natureBg = Color(0xffF2FFF2);
   static const Color safari = Color(0xffB06005);
   static const Color safariBg = Color(0xffFFF3E6);

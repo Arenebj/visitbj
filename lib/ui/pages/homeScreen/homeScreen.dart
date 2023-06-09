@@ -25,34 +25,20 @@ appHome() {
     backgroundColor: Colors.white,
     actions: [
       ImageAsset($appAssets.imgs.userImage, 35.43.h, 35.43.w),
-      const SpaceW(10),
-      Stack(
-        alignment: AlignmentDirectional.centerStart,
-        children: [
-          ImageSvg($appAssets.svgs.panier, 20.h, 20.w),
-          Positioned(
-              right: 0,
-              top: 10.h,
-              child: Container(
-                padding: const EdgeInsets.all(2),
-                decoration: const BoxDecoration(
-                  color: Colors.red,
-                  shape: BoxShape.circle,
-                ),
-                child: Text(
-                  1.toString(),
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              )),
-        ],
+      SpaceW(15.w),
+      appBarMenu(
+        $appAssets.svgs.panier,
+        AppColors.cartNote,
+        Colors.black,
+        1,
       ),
-      const SpaceW(10),
-      ImageSvg($appAssets.svgs.notification, 20.h, 20.w),
-      const SpaceW(10),
+      appBarMenu(
+        $appAssets.svgs.notification,
+        AppColors.red,
+        Colors.white,
+        0,
+      ),
+     
     ],
   );
 }
@@ -213,5 +199,49 @@ Widget bodyHome(BuildContext context) {
         ),
       ),
     ],
+  );
+}
+
+Widget appBarMenu(String image, Color colorBg, Color color, int total) {
+  return TextButton(
+    onPressed: null,
+    style: ButtonStyle(
+      padding: MaterialStateProperty.all(EdgeInsets.zero), // Retirer le padding
+      minimumSize:
+          MaterialStateProperty.all(Size.zero), // Retirer la taille minimale
+    ),
+    child: SizedBox(
+      height: 35.43.h,
+      width: 35.43.w,
+      child: Stack(
+        alignment: AlignmentDirectional.centerStart,
+        children: [
+          ImageSvg(image, 20.h, 20.w),
+          Positioned(
+            top: 1.h,
+            right: 12.w,
+            child: Container(
+              height: 15.h,
+              width: 15.w,
+              //padding: const EdgeInsets.all(2),
+              decoration: BoxDecoration(
+                color: colorBg,
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  total.toString(),
+                  style: TextStyle(
+                    color: color,
+                    fontSize: 8.h,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
   );
 }
