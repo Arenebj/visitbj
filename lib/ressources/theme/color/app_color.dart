@@ -18,5 +18,6 @@ class AppColors {
   static const Color white = Color(0xffFFFFFF);
   static const Color black = Color(0xff000000);
   static const Color brown = Color(0xff43474E);
+  static const Color outline = Color(0xff938F99);
 
 }
