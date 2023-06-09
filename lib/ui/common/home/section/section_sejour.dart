@@ -8,7 +8,7 @@ class SectionSejour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(10.h),
       width: 247.32.h, //MediaQuery.of(context).size.width * 0.70,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +57,7 @@ class SectionSejour extends StatelessWidget {
                         itemCount: 5,
                         itemSize: 14.76.h,
                         itemPadding:
-                            const EdgeInsets.symmetric(horizontal: 4.0),
+                             EdgeInsets.symmetric(horizontal: 4.0.h),
                         itemBuilder: (context, _) => const Icon(
                           Icons.star,
                           color: AppColors.primaryOne,
@@ -83,7 +83,8 @@ class SectionSejour extends StatelessWidget {
                       SvgPicture.asset($appAssets.svgs.calendar),
                       const SpaceW(10),
                       TitleText(
-                          "${getDateStart(pack.dateStart)}-${getDateEnd(pack.dateEnd)}",
+                          "${getDateStart(pack.dateStart)}.-${getDateEnd(pack.dateEnd)}"
+                              .toUpperCase(),
                           AppTypography().regularAg14.copyWith(
                               fontSize: 16.85.h,
                               color: AppColors.outline,

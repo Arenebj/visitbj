@@ -12,9 +12,8 @@ class WelcomeSection extends StatelessWidget {
       children: [
         TitleText(
           title,
-          AppTypography().semiBold.copyWith(fontSize: 28),
+          AppTypography().semiBold.copyWith(fontSize: 28.h),
         ),
-        ImageLoad(image, 69.h, 69.w)
       ],
     );
   }

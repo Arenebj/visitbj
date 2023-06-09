@@ -16,5 +16,7 @@ class Svgs {
   final inactiveSearch ="assets/svg/inactive_search.svg";
   final account ="assets/svg/active_account.svg";
   final inactiveAccount ="assets/svg/inactive_account.svg";
+  final panier = "assets/svg/panier.svg";
+  final notification = "assets/svg/notification.svg";
 
 }

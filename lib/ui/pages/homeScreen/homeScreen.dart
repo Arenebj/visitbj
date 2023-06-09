@@ -11,17 +11,59 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appHome(),
       backgroundColor: Colors.white,
       body: bodyHome(context),
     );
   }
 }
 
+appHome() {
+  return AppBar(
+    elevation: 0.0,
+    automaticallyImplyLeading: false,
+    backgroundColor: Colors.white,
+    actions: [
+      ImageAsset($appAssets.imgs.userImage, 35.43.h, 35.43.w),
+      const SpaceW(10),
+      Stack(
+        alignment: AlignmentDirectional.centerStart,
+        children: [
+          ImageSvg($appAssets.svgs.panier, 20.h, 20.w),
+          Positioned(
+              right: 0,
+              top: 5.h,
+              child: Container(
+                padding: const EdgeInsets.all(2),
+                decoration: const BoxDecoration(
+                  color: Colors.red,
+                  shape: BoxShape.circle,
+                ),
+                child: Text(
+                  1.toString(),
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              )),
+        ],
+      ),
+      const SpaceW(10),
+      ImageSvg($appAssets.svgs.notification, 20.h, 20.w),
+      const SpaceW(10),
+    ],
+  );
+}
+
 Widget bodyHome(BuildContext context) {
   return ListView(
     children: [
       Padding(
-        padding: EdgeInsets.only(left: 15, right: 15, top: 56.h, bottom: 46.h),
+        padding:
+            // EdgeInsets.only(left: 15.w, right: 15.w, top: 56.h, bottom: 31.h),
+            EdgeInsets.all(15.h),
         child:
             const WelcomeSection("Bienvenue!", "assets/images/userImage.png"),
       ),
@@ -46,7 +88,7 @@ Widget bodyHome(BuildContext context) {
       Consumer<CategoryProvider>(
         builder: (context, categoriesDivideList, _) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7.5),
+            padding: EdgeInsets.symmetric(horizontal: 15.h, vertical: 7.5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(2, (index) {
@@ -54,8 +96,8 @@ Widget bodyHome(BuildContext context) {
                   width: 166.w,
                   height: 149.4.h,
                   decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(4.74286),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(4.74286.h),
                     ),
                     shape: BoxShape.rectangle,
                     color: AppColors.getColorBg(categoriesDivideList
@@ -83,7 +125,7 @@ Widget bodyHome(BuildContext context) {
       Consumer<CategoryProvider>(
         builder: (context, categoriesDivideList, _) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7.5),
+            padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 7.5.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(2, (index) {
