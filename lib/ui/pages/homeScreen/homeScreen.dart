@@ -32,7 +32,7 @@ appHome() {
           ImageSvg($appAssets.svgs.panier, 20.h, 20.w),
           Positioned(
               right: 0,
-              top: 5.h,
+              top: 10.h,
               child: Container(
                 padding: const EdgeInsets.all(2),
                 decoration: const BoxDecoration(
