@@ -1,4 +1,5 @@
 import 'package:visitbj/export.dart';
+import 'package:visitbj/ressources/theme/app_theme.dart';
 import 'package:visitbj/ui/common/home/section/section_event.dart';
 import 'package:visitbj/ui/common/home/section/section_party.dart';
 import 'package:visitbj/ui/common/home/section/section_sejour.dart';

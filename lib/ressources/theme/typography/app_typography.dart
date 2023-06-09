@@ -54,6 +54,11 @@ class AppTypography {
       fontSize: 17,
       fontWeight: FontWeight.w600,
       color: AppColors.brown);
+  final TextStyle bottomLabel =  const TextStyle(
+      fontFamily: _poppins,
+      fontSize: 8,
+      fontWeight: FontWeight.w600,
+      color: AppColors.primaryTwo);
 
 
 }

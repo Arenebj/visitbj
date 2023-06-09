@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AppColors {
   const AppColors._();
   static const Color primaryOne = Color(0xffFFB923);
@@ -26,11 +25,9 @@ class AppColors {
   static const Color white = Color(0xffFFFFFF);
   static const Color black = Color(0xff000000);
   static const Color brown = Color(0xff43474E);
-  static const Color darkOutline = Color(0xff8E9199);
-  static const Color lightOutline = Color(0xff8E9199);
+  static const Color outline = Color(0xff8E9199);
 
-
-static getColor(String libelle) {
+  static getColor(String libelle) {
     switch (libelle) {
       case "Nature":
         return AppColors.nature;
@@ -44,7 +41,7 @@ static getColor(String libelle) {
     }
   }
 
- static getColorBg(String libelle) {
+  static getColorBg(String libelle) {
     switch (libelle) {
       case "Nature":
         return AppColors.natureBg;
@@ -61,6 +58,4 @@ static getColor(String libelle) {
       default:
     }
   }
-
 }
-

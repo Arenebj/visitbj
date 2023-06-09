@@ -1,4 +1,5 @@
 import 'package:visitbj/export.dart';
+import 'package:visitbj/ressources/theme/app_theme.dart';
 
 class SectionSejour extends StatelessWidget {
   final PackEvent pack;
@@ -45,7 +46,7 @@ class SectionSejour extends StatelessWidget {
                           pack.point.toString(),
                           AppTypography().cardText.copyWith(
                               fontSize: 13.77.h,
-                              color: AppColors.darkOutline,
+                              color: AppColors.outline,
                               height: 1.2.h)),
                       const SpaceW(5),
                       RatingBar.builder(
@@ -85,7 +86,7 @@ class SectionSejour extends StatelessWidget {
                           "${getDateStart(pack.dateStart)}-${getDateEnd(pack.dateEnd)}",
                           AppTypography().regularAg14.copyWith(
                               fontSize: 16.85.h,
-                              color: AppColors.lightOutline,
+                              color: AppColors.outline,
                               height: 1.2.h)),
                     ],
                   ),
