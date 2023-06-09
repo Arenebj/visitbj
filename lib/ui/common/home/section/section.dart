@@ -13,11 +13,11 @@ class TitleText extends StatelessWidget {
   }
 }
 
-class ImageLoad extends StatelessWidget {
+class ImageAsset extends StatelessWidget {
   final String image;
   final double height;
   final double width;
-  const ImageLoad(this.image, this.height, this.width, {super.key});
+  const ImageAsset(this.image, this.height, this.width, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +25,20 @@ class ImageLoad extends StatelessWidget {
       height: height,
       width: width,
       image: AssetImage(image),
+    );
+  }
+}
+class ImageSvg extends StatelessWidget {
+  final String image;
+  final double height;
+  final double width;
+  const ImageSvg(this.image, this.height, this.width, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  SvgPicture.asset(image,
+     height: height,
+      width: width,
     );
   }
 }
@@ -36,13 +50,13 @@ class PageViewSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.only(left: 2),
+      margin: EdgeInsets.only(left: 2.h),
       width: 247.32.h, //MediaQuery.of(context).size.width * 0.70,
       height: 208.04.h,
       decoration: BoxDecoration(
           image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
-          borderRadius: const BorderRadius.all(
-            Radius.circular(10),
+          borderRadius: BorderRadius.all(
+            Radius.circular(10.h),
           ),
           shape: BoxShape.rectangle),
       child: Column(

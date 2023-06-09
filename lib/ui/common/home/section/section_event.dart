@@ -15,8 +15,8 @@ class SectionEvent extends StatelessWidget {
         children: [
           PageViewSection(pack.images.first),
           Padding(
-            padding: const EdgeInsets.only(
-              top: 10,
+            padding: EdgeInsets.only(
+              top: 10.h,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +59,7 @@ class SectionEvent extends StatelessWidget {
                         itemCount: 5,
                         itemSize: 14.76.h,
                         itemPadding:
-                            const EdgeInsets.symmetric(horizontal: 4.0),
+                             EdgeInsets.symmetric(horizontal: 4.0.h),
                         itemBuilder: (context, _) => const Icon(
                           Icons.star,
                           color: AppColors.primaryOne,
@@ -107,7 +107,7 @@ class SectionEvent extends StatelessWidget {
                           ),
                           WidgetSpan(
                             child: Padding(
-                              padding: const EdgeInsets.only(bottom: 3.0),
+                              padding: EdgeInsets.only(bottom: 3.0.h),
                               child: Text(
                                 ' FCFA ',
                                 style: AppTypography()
