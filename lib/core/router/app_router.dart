@@ -26,6 +26,13 @@ class AppRouter {
             return const SplashScreen();
           },
         ),
+        GoRoute(
+          path: AppPage.onBoarding.toPath,
+          name: AppPage.onBoarding.toName,
+          builder: (context, state) {
+            return const OnBoarding();
+          },
+        ),
 
       ]
 
