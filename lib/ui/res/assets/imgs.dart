@@ -7,5 +7,7 @@ final splash1 = "assets/images/spalsh1.png";
 final splash2 = "assets/images/splash2.png";
 final splash3 = "assets/images/splash3.png";
 final logo = "assets/images/logovist.png";
+final homeImage = "assets/images/homeImage.png";
+final userImage = "assets/images/userImage.png";
 
 }

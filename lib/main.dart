@@ -1,8 +1,13 @@
+import 'package:intl/date_symbol_data_local.dart';
+
 import 'export.dart';
 
 import 'core/router/app_router.dart';
 void main() {
-  runApp(const MyApp());
+  initializeDateFormatting('fr_FR', null).then((_) {
+    // Initialize the desired locale
+    runApp(const MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {

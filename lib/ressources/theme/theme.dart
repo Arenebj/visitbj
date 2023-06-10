@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:visitbj/ressources/theme/typography/app_typography.dart';
 
 import 'color/app_color.dart';
 
