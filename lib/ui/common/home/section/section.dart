@@ -50,7 +50,7 @@ class PageViewSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //padding: const EdgeInsets.all(10),
-      margin: EdgeInsets.only(left: 2.h),
+      // margin: EdgeInsets.only(left: 2.h),
       width: 247.32.h, //MediaQuery.of(context).size.width * 0.70,
       height: 208.04.h,
       decoration: BoxDecoration(

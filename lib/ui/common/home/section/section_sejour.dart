@@ -8,7 +8,7 @@ class SectionSejour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10.h),
+      padding: EdgeInsets.only(left: 0),
       width: 247.32.h, //MediaQuery.of(context).size.width * 0.70,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,7 +37,7 @@ class SectionSejour extends StatelessWidget {
                         .copyWith(fontSize: 17.87.h, height: 1.2.h)),
                 const SpaceH(10),
                 SizedBox(
-                  width: 247.32.h,
+                  width: 247.32.w,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,13 +77,14 @@ class SectionSejour extends StatelessWidget {
                 ),
                 const SpaceH(10),
                 SizedBox(
-                  width: 247.32.h,
+                  width: 247.32.w,
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SvgPicture.asset($appAssets.svgs.calendar),
                       const SpaceW(10),
                       TitleText(
-                          "${getDateStart(pack.dateStart)}.-${getDateEnd(pack.dateEnd)}"
+                          "${getDateStart(pack.dateStart)}-${getDateEnd(pack.dateEnd)}"
                               .toUpperCase(),
                           AppTypography().regularAg14.copyWith(
                               fontSize: 16.85.h,
@@ -94,6 +95,7 @@ class SectionSejour extends StatelessWidget {
                 ),
                 const SpaceH(10),
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     RichText(
                       text: TextSpan(

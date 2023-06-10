@@ -30,7 +30,7 @@ appHome() {
         $appAssets.svgs.panier,
         AppColors.cartNote,
         Colors.black,
-        1,
+        20,
       ),
       appBarMenu(
         $appAssets.svgs.notification,
@@ -74,7 +74,7 @@ Widget bodyHome(BuildContext context) {
       Consumer<CategoryProvider>(
         builder: (context, categoriesDivideList, _) {
           return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.h, vertical: 7.5),
+            padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 7.5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(2, (index) {
@@ -164,7 +164,10 @@ Widget bodyHome(BuildContext context) {
               scrollDirection: Axis.horizontal,
               itemCount: packs.packs.length,
               itemBuilder: (context, index) {
-                return SectionEvent(packs.packs[index]);
+                return Container(
+                    padding:
+                        EdgeInsets.only(right: 15.w, left: index == 0 ? 15 : 0),
+                    child: SectionEvent(packs.packs[index]));
               },
             );
           },
@@ -173,7 +176,8 @@ Widget bodyHome(BuildContext context) {
       const SectionParty("Séjours les plus achétés", null),
       Container(
         padding: const EdgeInsets.all(0),
-        height: 500.h,
+        height: 400.h,
+        
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -191,8 +195,12 @@ Widget bodyHome(BuildContext context) {
             return ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: packs.packs.length,
+              // itemExtent: 247.32.w,
               itemBuilder: (context, index) {
-                return SectionSejour(packs.packs[index]);
+                return Container(
+                    padding:
+                        EdgeInsets.only(right: 15.w, left: index == 0 ? 15 : 0),
+                    child: SectionSejour(packs.packs[index]));
               },
             );
           },
