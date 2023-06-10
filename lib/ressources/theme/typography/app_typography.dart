@@ -42,7 +42,7 @@ class AppTypography {
   final TextStyle regular =  const TextStyle(
       fontFamily: _poppins,
       fontSize: 16,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w700,
       color: AppColors.primaryTwo);
   final TextStyle regularBold = const TextStyle(
       fontFamily: _poppins,
