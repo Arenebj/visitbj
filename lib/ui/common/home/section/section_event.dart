@@ -8,7 +8,7 @@ class SectionEvent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(0.h),
       width: 247.32.h, //MediaQuery.of(context).size.width * 0.70,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,7 +85,8 @@ class SectionEvent extends StatelessWidget {
                       SvgPicture.asset($appAssets.svgs.calendar),
                       const SpaceW(10),
                       TitleText(
-                          "22 Juillet-26 Juillet",
+                          "${getDateStart(pack.dateStart)}.-${getDateEnd(pack.dateEnd)}"
+                              .toUpperCase(),
                           AppTypography().regularAg14.copyWith(
                               fontSize: 16.85.h,
                               color: AppColors.outline,

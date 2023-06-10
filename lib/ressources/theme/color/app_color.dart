@@ -39,7 +39,7 @@ class AppColors {
   static const Color balneaireBg = Color(0xff00A5C9);
   static const Color rate = Color(0xff8E9199);
   static const Color outlineVariant = Color(0xffC4C6CF);
-
+  static const Color cartNote = Color(0xff96ED89);
   //static const Color outline = Color(0xff8E9199);
 
   static getColor(String libelle) {
