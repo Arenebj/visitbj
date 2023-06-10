@@ -1,5 +1,7 @@
 import 'package:visitbj/export.dart';
 
+import '../bottomNavigator/widget/draw_navigation_item.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

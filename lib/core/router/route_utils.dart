@@ -3,8 +3,8 @@ enum AppPage {
   dashboard,
   home,
   favors,
-  search,
-  account,
+  bracket,
+  customize,
   packdetails,
 }
 
@@ -19,10 +19,10 @@ extension AppPageExtension on AppPage {
         return "/home";
       case AppPage.favors:
         return "/favors";
-      case AppPage.search:
-        return "/search";
-      case AppPage.account:
-        return "/account";
+      case AppPage.bracket:
+        return "/bracket";
+      case AppPage.customize:
+        return "/customize";
       case AppPage.packdetails:
         return "/packdetails";
       default:
@@ -40,10 +40,10 @@ extension AppPageExtension on AppPage {
         return "HOME";
         case AppPage.favors:
         return "FAVORS";
-        case AppPage.search:
-        return "SEARCH";
-        case AppPage.account:
-        return "ACCOUNT";
+        case AppPage.bracket:
+        return "BRACKET";
+        case AppPage.customize:
+        return "CUSTOMIZE";
       case AppPage.packdetails:
         return "PACKDETAILS";
       default:

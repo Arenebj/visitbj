@@ -30,6 +30,15 @@ class _PackDescriptionState extends State<PackDescription>with TickerProviderSta
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
+
+// //Add this CustomPaint widget to the Widget Tree
+//         CustomPaint(
+//             size: Size(432, (432*1.1013333333333333).toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+//         painter: RPSCustomPainter(),
+//       ),
+
+
             const SpaceH(17),
              AppBarCustom(
               title: 'Votre panier',

@@ -17,9 +17,9 @@ class ScaffoldCustom extends StatelessWidget {
             return const FavorsScreen();
           }else if(provider.path==AppPage.packdetails){
             return  const PackDescription();
-          }else if(provider.path==AppPage.search){
+          }else if(provider.path==AppPage.bracket){
             return const HomeScreen();
-          }else if(provider.path==AppPage.account){
+          }else if(provider.path==AppPage.customize){
             return const PackDescription();
           }
           else{
@@ -77,29 +77,29 @@ class ScaffoldCustom extends StatelessWidget {
                       color: provider.index==1?AppColors.primaryTwo:AppColors.outline,
                     ),
                     BottomMenuItem(
-                      label: "Rechercher",
+                      label: "Panier",
                       icon: provider.index==2
-                          ? $appAssets.svgs.search
-                          : $appAssets.svgs.inactiveSearch,
+                          ? $appAssets.svgs.basket
+                          : $appAssets.svgs.inactiveBasket,
                       onTap: () {
-                        if(provider.path!=AppPage.search || homeDashBoardProvider.path!=AppPage.search){
+                        if(provider.path!=AppPage.bracket || homeDashBoardProvider.path!=AppPage.bracket){
                           provider.setIndex(2);
-                          homeDashBoardProvider.setPath(AppPage.search);
-                          provider.setPath(AppPage.search);
+                          homeDashBoardProvider.setPath(AppPage.bracket);
+                          provider.setPath(AppPage.bracket);
                         }
                       },
                       color: provider.index==2?AppColors.primaryTwo:AppColors.outline,
                     ),
                     BottomMenuItem(
-                      label: "Compte",
+                      label: "Personnaliser",
                       icon: provider.index==3
-                          ? $appAssets.svgs.account
-                          : $appAssets.svgs.inactiveAccount,
+                          ? $appAssets.svgs.customize
+                          : $appAssets.svgs.inactiveCustomize,
                       onTap: () {
-                        if(provider.path!=AppPage.account || homeDashBoardProvider.path!=AppPage.account){
+                        if(provider.path!=AppPage.customize || homeDashBoardProvider.path!=AppPage.customize){
                           provider.setIndex(3);
-                          homeDashBoardProvider.setPath(AppPage.account);
-                          provider.setPath(AppPage.account);
+                          homeDashBoardProvider.setPath(AppPage.customize);
+                          provider.setPath(AppPage.customize);
                         }
                       },
                       color: provider.index==3?AppColors.primaryTwo:AppColors.outline,

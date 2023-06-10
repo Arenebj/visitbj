@@ -12,10 +12,10 @@ class Svgs {
   final inactiveHome = "assets/svg/inactive_home.svg";
   final favors ="assets/svg/active_favorie.svg";
   final inactiveFavors ="assets/svg/inactive_favorie.svg";
-  final search ="assets/svg/active_search.svg";
-  final inactiveSearch ="assets/svg/inactive_search.svg";
-  final account ="assets/svg/active_account.svg";
-  final inactiveAccount ="assets/svg/inactive_account.svg";
+  final basket ="assets/svg/active_basket.svg";
+  final inactiveBasket ="assets/svg/inactive_basket.svg";
+  final customize ="assets/svg/active_customize.svg";
+  final inactiveCustomize ="assets/svg/inactive_customize.svg";
   final categorieImage ="assets/svg/categorie_image.svg";
   final family ="assets/svg/familly.svg";
   final detente ="assets/svg/detente.svg";

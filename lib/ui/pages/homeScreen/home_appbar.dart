@@ -5,6 +5,7 @@ appHome() {
     elevation: 0.0,
     automaticallyImplyLeading: false,
     backgroundColor: Colors.white,
+
     actions: [
       ImageAsset($appAssets.imgs.userImage, 35.43.h, 35.43.w),
       SpaceW(15.w),
