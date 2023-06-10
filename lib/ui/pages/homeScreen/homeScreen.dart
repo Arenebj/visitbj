@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appHome(),
-      backgroundColor: AppColors.white,
+      backgroundColor: Colors.white,
       body: bodyHome(context),
     );
   }
@@ -61,10 +61,10 @@ Widget bodyHome(BuildContext context) {
     children: [
       Padding(
         padding:
-            // EdgeInsets.only(left: 15.w, right: 15.w, top: 56.h, bottom: 31.h),
-            EdgeInsets.all(15.h),
+        // EdgeInsets.only(left: 15.w, right: 15.w, top: 56.h, bottom: 31.h),
+        EdgeInsets.all(15.h),
         child:
-            const WelcomeSection("Bienvenue!", "assets/images/userImage.png"),
+        const WelcomeSection("Bienvenue!", "assets/images/userImage.png"),
       ),
       Container(
         height: 224.h,
@@ -112,7 +112,7 @@ Widget bodyHome(BuildContext context) {
                               .categoriesDivideList[index].label,
                           AppTypography().cardText.copyWith(
                               color: AppColors.getColor(categoriesDivideList
-                                  .categoriesDivideList[index].img)))
+                                  .categoriesDivideList[index].label)))
                     ],
                   ),
                 );
@@ -146,7 +146,7 @@ Widget bodyHome(BuildContext context) {
                               .categoriesDivideList[index + 2].label,
                           AppTypography().cardText.copyWith(
                               color: AppColors.getColor(categoriesDivideList
-                                  .categoriesDivideList[index + 2].label)))
+                                  .categoriesDivideList[index + 2].img)))
                     ],
                   ),
                 );
