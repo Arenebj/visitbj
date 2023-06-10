@@ -19,7 +19,7 @@ class DashboardProvider extends ChangeNotifier {
   DashboardProvider() {
     _pageController =
         PageController(viewportFraction: 1, initialPage: activePage);
-    startAutoScroll();
+    // startAutoScroll();
   }
 
   startAutoScroll() {
