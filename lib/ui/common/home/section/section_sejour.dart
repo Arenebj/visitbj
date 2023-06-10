@@ -33,7 +33,7 @@ class SectionSejour extends StatelessWidget {
                 TitleText(
                     pack.title,
                     AppTypography()
-                        .text
+                        .headline
                         .copyWith(fontSize: 17.87.h, height: 1.2.h)),
                 const SpaceH(10),
                 SizedBox(

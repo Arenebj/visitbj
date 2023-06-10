@@ -53,5 +53,13 @@ class DashboardProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  List<Widget> listPage = [];
+  List<Widget> listPage = [
+    const HomeScreen(),
+    const PackDescription(),
+    const Center(child: Text("Favors")),
+    const Center(child: Text("Search")),
+    const Center(child: Text("Account")),
+
+
+  ];
 }

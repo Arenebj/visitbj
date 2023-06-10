@@ -35,14 +35,14 @@ class SectionEvent extends StatelessWidget {
                 TitleText(
                     pack.title,
                     AppTypography()
-                        .text
+                        .headline
                         .copyWith(fontSize: 17.87.h, height: 1.2.h)),
                 const SpaceH(10),
                 SizedBox(
                   width: 247.32.h,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //smainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TitleText(
                           pack.point.toString(),

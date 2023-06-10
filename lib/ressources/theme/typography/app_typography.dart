@@ -1,65 +1,64 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../color/app_color.dart';
 
 class AppTypography {
   static const _poppins = 'Poppins';
-  final TextStyle medium = TextStyle(
+  final TextStyle medium =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 20.h,
+      fontSize: 20,
       fontWeight: FontWeight.w500,
       color: AppColors.white);
-  final TextStyle regularAg14 = TextStyle(
+  final TextStyle regularAg14 =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 14.h,
+      fontSize: 14,
       fontWeight: FontWeight.w300,
       color: AppColors.white);
-  final TextStyle regularHug = TextStyle(
+  final TextStyle regularHug = const TextStyle(
       fontFamily: _poppins,
-      fontSize: 14.h,
+      fontSize: 14,
       fontWeight: FontWeight.w400,
       color: AppColors.detailsColors);
-  final TextStyle headline = TextStyle(
+  final TextStyle headline = const TextStyle(
       fontFamily: _poppins,
-      fontSize: 34.h,
+      fontSize: 34,
       fontWeight: FontWeight.w800,
       color: AppColors.white);
-  final TextStyle semiBold = TextStyle(
+  final TextStyle semiBold =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 24.h,
+      fontSize: 24,
       fontWeight: FontWeight.w600,
       color: AppColors.black);
-  final TextStyle cardText = TextStyle(
+  final TextStyle cardText =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 24.h,
+      fontSize: 24,
       fontWeight: FontWeight.w500,
       color: AppColors.details);
-  final TextStyle regularAg16 = TextStyle(
+  final TextStyle regularAg16 =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 16.h,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
       color: AppColors.primaryTwo);
-  final TextStyle regular = TextStyle(
+  final TextStyle regular =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 16.h,
-      fontWeight: FontWeight.w500,
-      color: AppColors.primaryTwo);
-  final TextStyle regularBold = TextStyle(
-      fontFamily: _poppins,
-      fontSize: 16.h,
+      fontSize: 16,
       fontWeight: FontWeight.w700,
       color: AppColors.primaryTwo);
-  final TextStyle text = TextStyle(
+  final TextStyle regularBold = const TextStyle(
       fontFamily: _poppins,
-      fontSize: 17.h,
+      fontSize: 17,
       fontWeight: FontWeight.w600,
       color: AppColors.brown);
-  final TextStyle bottomLabel = TextStyle(
+  final TextStyle bottomLabel =  const TextStyle(
       fontFamily: _poppins,
-      fontSize: 8.h,
+      fontSize: 8,
       fontWeight: FontWeight.w600,
       color: AppColors.primaryTwo);
+  final TextStyle subtitle =  const TextStyle(
+      fontFamily: _poppins,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: AppColors.orange);
 
 
 }

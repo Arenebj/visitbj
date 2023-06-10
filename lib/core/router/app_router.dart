@@ -1,6 +1,7 @@
 import 'package:visitbj/export.dart';
 import 'package:visitbj/ui/pages/bottomNavigator/bottomNavigator.dart';
 import 'package:visitbj/ui/pages/homeScreen/homeScreen.dart';
+
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
   static final _shellNavigatorKey = GlobalKey<NavigatorState>();
@@ -30,27 +31,40 @@ class AppRouter {
               GoRoute(
                   path: AppPage.dashboard.toPath,
                   name: AppPage.dashboard.toName,
-                  builder: (context, state) => const BottomNavigatorScreen(),
+                  builder: (context, state) => const ScaffoldCustom(),
                   routes: [
                     GoRoute(
                       path: "home",
-                      pageBuilder: (context, state) => NoTransitionPage(child: HomeScreen()),
-                    
+                      pageBuilder: (context, state) =>
+                          const NoTransitionPage(child: HomeScreen()),
+                      routes: [
+                        GoRoute(
+                            path: "packdetails",
+                            name: "/packdetails",
+                            pageBuilder: (context, state) =>
+                            const NoTransitionPage(child: PackDescription()),
+                            routes: [
+
+                            ]),
+
+                      ]
                     ),
+                    GoRoute(
+                      path: "favors",
+                      pageBuilder: (context, state) =>
+                          const NoTransitionPage(child: FavorsScreen()),
+                    ),
+
                   ]),
             ]),
-
-       GoRoute(
+        GoRoute(
           path: AppPage.splash.toPath,
           name: AppPage.splash.toName,
           builder: (context, state) {
             return const SplashScreen();
           },
         ),
-
-      ]
-
-  );
+      ]);
 
   static GoRouter get router => _goRouter;
 }

@@ -8,6 +8,7 @@ class SectionParty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final homeDashBoardProvider = Provider.of<DashboardProvider>(context);
     return Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.symmetric(horizontal: 15.h, vertical: 7.5.w),
@@ -41,8 +42,14 @@ class SectionParty extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  TitleText("Tout voir",
-                      AppTypography().regular.copyWith(letterSpacing: 0.1.w)),
+                  InkWell(
+                    onTap: (){
+                      homeDashBoardProvider.setPath(AppPage.packdetails);
+
+                    },
+                    child: TitleText("Tout voir",
+                        AppTypography().regular.copyWith(letterSpacing: 0.1.w)),
+                  ),
                   Icon(
                     Icons.chevron_right_outlined,
                     color: AppColors.primaryTwo,

@@ -45,19 +45,19 @@ Widget bodyHome(BuildContext context) {
                     ),
                     shape: BoxShape.rectangle,
                     color: AppColors.getColorBg(categoriesDivideList
-                        .categoriesDivideList[index].libelle),
+                        .categoriesDivideList[index].label),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       SvgPicture.asset(categoriesDivideList
-                          .categoriesDivideList[index].image),
+                          .categoriesDivideList[index].img),
                       TitleText(
                           categoriesDivideList
-                              .categoriesDivideList[index].libelle,
+                              .categoriesDivideList[index].label,
                           AppTypography().cardText.copyWith(
                               color: AppColors.getColor(categoriesDivideList
-                                  .categoriesDivideList[index].libelle)))
+                                  .categoriesDivideList[index].img)))
                     ],
                   ),
                 );
@@ -79,19 +79,19 @@ Widget bodyHome(BuildContext context) {
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: AppColors.getColorBg(categoriesDivideList
-                        .categoriesDivideList[index + 2].libelle),
+                        .categoriesDivideList[index + 2].label),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       SvgPicture.asset(categoriesDivideList
-                          .categoriesDivideList[index + 2].image),
+                          .categoriesDivideList[index + 2].img),
                       TitleText(
                           categoriesDivideList
-                              .categoriesDivideList[index + 2].libelle,
+                              .categoriesDivideList[index + 2].label,
                           AppTypography().cardText.copyWith(
                               color: AppColors.getColor(categoriesDivideList
-                                  .categoriesDivideList[index + 2].libelle)))
+                                  .categoriesDivideList[index + 2].label)))
                     ],
                   ),
                 );
